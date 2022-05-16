@@ -11,37 +11,46 @@
         android:id="@+id/btn_dial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="44dp"
         android:text="Open Dialer"
         app:layout_constraintEnd_toStartOf="@+id/btn_layout"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="Dial"
+        />
+
 
     <Button
         android:id="@+id/btn_browser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
+        android:layout_marginBottom="408dp"
         android:text="Open Browser"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_email"
-        app:layout_constraintStart_toStartOf="@+id/btn_dial"
-        tools:layout_editor_absoluteY="228dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_dial" />
 
     <Button
         android:id="@+id/btn_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="408dp"
         android:text="Open Email"
-        app:layout_constraintEnd_toEndOf="@+id/btn_layout"
-        tools:layout_editor_absoluteY="228dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_layout" />
 
     <Button
         android:id="@+id/btn_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
         android:text="Change Acitivity"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
