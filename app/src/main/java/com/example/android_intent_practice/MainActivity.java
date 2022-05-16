@@ -18,9 +18,12 @@ public class MainActivity extends AppCompatActivity {
     public void Dial(View view){
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:+923040169808"));
+        startActivity(intent);
+    }
 
-            startActivity(intent);
-
-
+    public void Browse(View view) {
+        Uri webpage = Uri.parse("https://google.com");
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(intent);
     }
 }

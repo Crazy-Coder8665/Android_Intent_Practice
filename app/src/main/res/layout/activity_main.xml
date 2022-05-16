@@ -32,7 +32,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_dial" />
+        app:layout_constraintStart_toStartOf="@+id/btn_dial"
+        android:onClick="Browse"
+        />
 
     <Button
         android:id="@+id/btn_email"
