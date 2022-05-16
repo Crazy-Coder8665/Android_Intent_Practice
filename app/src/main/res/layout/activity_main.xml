@@ -55,5 +55,6 @@
         android:layout_marginEnd="16dp"
         android:text="Change Acitivity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="change"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

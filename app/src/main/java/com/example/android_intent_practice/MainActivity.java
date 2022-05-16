@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_SUBJECT, "subject");
         startActivity(intent);
     }
+
+    public void change(View view) {
+        Intent intent= new Intent(this,MainActivity2.class);
+        intent.putExtra("message","Welcome to this Activity");
+        startActivity(intent);
+    }
 }
