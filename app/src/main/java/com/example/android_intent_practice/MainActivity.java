@@ -26,4 +26,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
         startActivity(intent);
     }
+
+    public void Mail(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_EMAIL, "addresses@gmail.com");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "subject");
+        startActivity(intent);
+    }
 }
